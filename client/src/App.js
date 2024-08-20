@@ -5,6 +5,7 @@ import { useLocation } from 'react-router-dom';
 
 import Header from './Components/Header';
 import Courses from './Components/Courses/Course/Courses';
+import Dashboard from './Components/Courses/Course/Dashboard';
 
 import CourseDetail from './Components/Courses/Course/CourseDetail';
 import PaperDetail from './Components/Courses/Paper/PaperDetail';
@@ -39,6 +40,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Navigate replace to="/courses" />} />
+          <Route path="/" element={<Dashboard />} />
           <Route path="/courses" element={<PrivateRoute />}>
             <Route path="/courses" element={<Courses />} />
           </Route>
