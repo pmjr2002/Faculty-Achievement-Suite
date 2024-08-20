@@ -1,0 +1,19 @@
+1. GET Get the user from the database for Sign In
+2. POST Create a new user in the database
+
+3. GET Get all available courses
+4. GET Get all available papers
+
+5. GET Get a specific course by id
+6. GET Get a specific paper by id
+
+7. POST Create a new course
+8. POST Create a new paper
+
+9. DELETE Delete a specific course by id
+10. DELETE Delete a specific paper
+
+11. PUT Update a particular course
+12. PUT Update a specific paper
+
+.

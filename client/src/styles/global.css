@@ -1,0 +1,275 @@
+/* global.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 1.25em;
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+p {
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    hyphens: auto;
+}
+a {
+    color: #4b2e83; /* Deep purple base color */
+    text-decoration: none;
+    transition: color 0.3s ease, box-shadow 0.3s ease;
+}
+a:hover {
+    color: #ffffff; /* Brighter purple on hover */
+    box-shadow: 0 0 15px rgba(108, 67, 177, 0.4); /* Glow effect on hover */
+}
+.wrap {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+header {
+    background: #8fd9a8; /* Mint green base color */
+    color: #333;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+.header--flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header--logo a {
+    font-size: 1.25rem;
+    color: #333;
+}
+header li {
+    font-size: .8rem;
+}
+header nav a {
+    color: #333333; /* Lighter mint green */
+    transition: color 0.3s ease, box-shadow 0.3s ease;
+}
+header nav a:hover {
+    color: #07843b; /* Brighter mint green on hover */
+    box-shadow: 0 0 15px rgba(124, 211, 162, 0.4); /* Glow effect on hover */
+}
+.header--signedin li {
+    text-align: right;
+    line-height: 1.25;
+}
+.header--signedout li {
+    display: inline-block;
+    margin-left: .5rem;
+}
+.course--module {
+    background: #4b2e83; /* Deep purple base color */
+    border-radius: .5rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+.course--module:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(75, 46, 131, 0.1), 0 0 15px rgba(75, 46, 131, 0.4); /* Shadow and glow on hover */
+    background-color: #6c43b1; /* Brighter purple on hover */
+}
+.course--label {
+    color: #fff;
+    font-size: .9rem;
+    font-weight: 400;
+    margin-bottom: .25rem;
+}
+.course--title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+.course--add--module {
+    background: #8fd9a8; /* Mint green base color */
+    color: #333;
+    font-weight: 300;
+    font-size: 1.25rem;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+.course--add--module:hover {
+    background-color: #7cd3a2; /* Brighter mint green on hover */
+    color: #333; /* Maintain dark text color */
+    box-shadow: 0 0 15px rgba(124, 211, 162, 0.4); /* Glow effect on hover */
+}
+.course--add--title .add {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+    fill: #333; /* Dark text color */
+}
+.course--detail--title {
+    padding-bottom: .25rem;
+    border-bottom: 1px solid #4b2e83; /* Deep purple base color */
+    margin: 3rem 0 .5rem;
+    font-size: .9rem;
+    color: #4b2e83; /* Deep purple base color */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.course--name {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    font-weight: 700;
+    color: #4b2e83; /* Deep purple base color */
+}
+.course--detail--list {
+    font-weight: 300;
+    margin: 0 0 1.5rem 1rem;
+    line-height: 1.5;
+}
+.actions--bar {
+    background: #8fd9a8; /* Mint green base color */
+    padding: 1rem 0;
+    margin: -2rem 0 2rem;
+}
+.validation--errors {
+    background: #8fd9a8; /* Mint green base color */
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-bottom: 2.5rem;
+}
+.validation--errors h3 {
+    color: #cc0000; /* Error color */
+    font-size: 1.25rem;
+    margin-bottom: .5rem;
+}
+.validation--errors ul {
+    font-weight: 300;
+    margin-left: 1rem;
+    line-height: 1.25;
+}
+.validation--errors li {
+    margin-bottom: .5rem;
+}
+.validation--errors li:last-child {
+    margin-bottom: 0;
+}
+.validation--errors p {
+    margin-bottom: 0;
+}
+.form--centered {
+    max-width: 510px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+form {
+    margin-bottom: 2.5rem;
+}
+label {
+    display: block;
+    font-weight: 300;
+    margin-bottom: .25rem;
+}
+input, textarea {
+    display: block;
+    width: 100%;
+    color: #332a40;
+    border-radius: .5rem;
+    border: 1px solid #8c789b;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    font-family: 'Work Sans', sans-serif;
+    font-size: .8rem;
+}
+textarea {
+    min-height: 300px;
+}
+.button {
+    background: #4b2e83; /* Deep purple base color */
+    color: #fff;
+    font-size: 1rem;
+    padding: .75rem 1.5rem;
+    border: 0;
+    margin: 0 0 .5rem 0;
+    display: block;
+    width: 210px;
+    text-align: center;
+    border-radius: .5rem;
+    font-weight: bold;
+    transition: background 0.2s, box-shadow 0.3s ease;
+    font-family: 'Work Sans', sans-serif;       
+}
+.button:last-child {
+    margin-bottom: 0;
+}
+.button:not(.button-secondary):hover {
+    background: #3a1e6d; /* Slightly darker purple on hover */
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(58, 30, 109, 0.4); /* Glow effect on hover */
+}
+.button-secondary {
+    color: #8fd9a8; /* Mint green base color */
+    background: none;
+    box-shadow: 0 0 0 2px #8fd9a8 inset; /* Mint green border */
+    transition: box-shadow 0.2s, color 0.2s, background 0.3s ease;
+}
+.button-secondary:hover {
+    color: #7cd3a2; /* Brighter mint green on hover */
+    box-shadow: 0 0 0 2px #7cd3a2 inset; /* Brighter mint green glow on hover */
+    cursor: pointer;
+}
+input:focus, button:focus, .button:focus, textarea:focus, a:focus {
+    border: none;
+    border-radius: 0;
+    outline: 3px solid #332a40;
+}
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+}
+.loading span {
+    font-size: 32px;
+    text-align: center;
+}
+@media screen and (min-width: 600px) {
+    .header--signedin li {
+        display: inline-block;
+        margin-left: .5rem;
+        line-height: 1;
+    }
+    .main--grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1.5rem;
+        grid-auto-rows: 1fr;
+    }
+}
+@media screen and (min-width: 800px) {
+    .main--grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .main--flex {
+        display: flex;
+    }
+    .main--flex div:first-child {
+        flex-basis: 62%;
+    }
+    .main--flex div:last-child {
+        margin-left: 8%;
+        flex-basis: 30%;
+    }
+    .course--detail--title {
+        margin: 1.5rem 0 .5rem;
+    }
+    .button {
+        margin: 0 .5rem 0 0;
+        display: inline-block;
+    }
+}
